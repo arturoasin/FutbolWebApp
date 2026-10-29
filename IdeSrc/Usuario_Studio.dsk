@@ -1,20 +1,20 @@
 [Workspace]
 CurrentProject=WebApp.src
 Location=C:\DataFlex Projects\FutbolWebApp\IdeSrc\Usuario_Studio.dsk
-CreateNew=-1
+CreateNew=3
 [TabWindows]
 GroupCount=1
 HorizontalGroups=1
 [TabGroup0]
 GroupSize=40
-SelectedTab=2
+SelectedTab=4
 [Window0]
 Filename=Workspace Dashboard
 ViewType=101
 Top=26
 Left=0
-Bottom=653
-Right=354
+Bottom=663
+Right=1317
 TabIndex=0
 TabGroup=0
 [Window1]
@@ -22,8 +22,8 @@ Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\WebApp.src
 ViewType=1
 Top=26
 Left=0
-Bottom=653
-Right=354
+Bottom=663
+Right=1317
 CursorLine=0
 CursorColumn=0
 TabIndex=1
@@ -33,9 +33,29 @@ Filename=C:\Program Files\DataFlex 25.0\Pkg\cWebAppBase_Mixin.pkg
 ViewType=1
 Top=26
 Left=0
-Bottom=653
-Right=354
+Bottom=663
+Right=1317
 CursorLine=292
 CursorColumn=0
 TabIndex=2
+TabGroup=0
+[Window3]
+Filename=liga
+ViewType=4
+Top=26
+Left=0
+Bottom=663
+Right=1317
+TabIndex=3
+TabGroup=0
+[Window4]
+Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\SelectLiga.wo
+ViewType=1
+Top=26
+Left=0
+Bottom=663
+Right=1317
+CursorLine=0
+CursorColumn=0
+TabIndex=4
 TabGroup=0
