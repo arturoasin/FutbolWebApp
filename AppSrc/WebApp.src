@@ -63,6 +63,17 @@ Object oWebApp is a cWebApp
                                 Send NavigatePath
                         End_Procedure
                     End_Object
+
+                    Object oVistaSelectdePosicionItem1 is a cWebMenuItem
+                        Set psCaption to "Vista Select de Posicion"
+
+                        WebRegisterPath ntNavigateBegin oSelectPosicion
+
+                        Procedure OnClick
+                            Forward Send OnClick
+                                Send NavigatePath
+                        End_Procedure
+                    End_Object
                 End_Object
 
                 Object oSignOut_itm is a cWebMenuItem
@@ -146,6 +157,7 @@ Object oWebApp is a cWebApp
     Use Dashboard.wo
     Use SelectLiga.wo
     Use ZoomLiga.wo
+    Use SelectPosicion.wo
     Set phoDefaultView to oDashboard
 
 End_Object
