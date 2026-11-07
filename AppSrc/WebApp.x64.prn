@@ -1,5 +1,5 @@
 Compiling Program: C:\DataFlex Projects\FutbolWebApp\AppSrc\WebApp.src
-Memory Available: 5992341504
+Memory Available: 4790337536
 1>Use AllWebAppClasses.pkg
 Using pre-compiled package ALLWEBAPPCLASSES.PKG
 Including file: AllWebAppClasses.x64.pkd    (C:\Program Files\DataFlex 25.0\Pkg\AllWebAppClasses.x64.pkd)
@@ -3342,161 +3342,155 @@ Including file: SelectJugador.wo    (C:\DataFlex Projects\FutbolWebApp\AppSrc\Se
 38980>>>        Set pbShowHeader to False
 38981>>>        Set piSortColumn to 0
 38982>>>
-38982>>>        Object oligaNombre is a cWebColumn
-38984>>>            Entry_Item liga.Nombre
-38985>>>            Set psCaption to "liga.Nombre"
-38986>>>            Set piWidth to 1243
+38982>>>        Object ojugadorNombre is a cWebColumn
+38984>>>            Entry_Item jugador.Nombre
+38985>>>            Set psCaption to "Nombre"
+38986>>>            Set piWidth to 621
 38987>>>        End_Object 
 38988>>>
-38988>>>        Object oligaPais is a cWebColumn
-38990>>>            Entry_Item liga.Pais
-38991>>>            Set psCaption to "liga.Pais"
+38988>>>        Object ojugadorApellido is a cWebColumn
+38990>>>            Entry_Item jugador.Apellido
+38991>>>            Set psCaption to "Apellido"
 38992>>>            Set piWidth to 621
 38993>>>        End_Object 
 38994>>>
-38994>>>        Object oligaEquipos is a cWebColumn
-38996>>>            Entry_Item liga.Equipos
-38997>>>            Set psCaption to "liga.Equipos"
-38998>>>            Set piWidth to 124
+38994>>>        Object ojugadorNacionalidad is a cWebColumn
+38996>>>            Entry_Item jugador.Nacionalidad
+38997>>>            Set psCaption to "Nacionalidad"
+38998>>>            Set piWidth to 621
 38999>>>        End_Object 
 39000>>>
-39000>>>        Object oligaEquiposMax is a cWebColumn
-39002>>>            Entry_Item liga.EquiposMax
-39003>>>            Set psCaption to "liga.EquiposMax"
-39004>>>            Set piWidth to 124
-39005>>>        End_Object 
-39006>>>
-39006>>>        Object oDetailButton is a cWebColumnButton
-39008>>>            Set psCaption to "btn"
-39009>>>            Set piWidth to 45
-39010>>>            Set pbFixedWidth to True
-39011>>>            Set pbResizable to False
-39012>>>            Set piListRowSpan to 1
-39013>>>            Set psBtnCssClass to "WebButtonIcon WebIcon_Info"
-39014>>>            Set peAlign to alignRight
+39000>>>        Object oDetailButton is a cWebColumnButton
+39002>>>            Set psCaption to "btn"
+39003>>>            Set piWidth to 45
+39004>>>            Set pbFixedWidth to True
+39005>>>            Set pbResizable to False
+39006>>>            Set piListRowSpan to 1
+39007>>>            Set psBtnCssClass to "WebButtonIcon WebIcon_Info"
+39008>>>            Set peAlign to alignRight
+39009>>>
+39009>>>WebRegisterPath ntNavigateForward oZoomJugador
 39015>>>
-39015>>>WebRegisterPath ntNavigateForward oZoomJugador
-39021>>>
-39021>>>            Procedure OnClick
-39024>>>                Send NavigatePath
-39025>>>            End_Procedure
+39015>>>            Procedure OnClick
+39018>>>                Send NavigatePath
+39019>>>            End_Procedure
+39020>>>
+39020>>>            Procedure OnGetNavigateForwardData tWebNavigateData ByRef NavigateData Handle hoToView
+39023>>>                Move True to NavigateData.bReadOnly
+39024>>>            End_Procedure
+39025>>>
+39025>>>        End_Object 
 39026>>>
-39026>>>            Procedure OnGetNavigateForwardData tWebNavigateData ByRef NavigateData Handle hoToView
-39029>>>                Move True to NavigateData.bReadOnly
-39030>>>            End_Procedure
-39031>>>
-39031>>>        End_Object 
-39032>>>
+39026>>>// ToDo: Fill in the from-parent child Select view object name for navigate forward
+39026>>>//        WebRegisterPath ntNavigateForward oSelectView
+39026>>>
+39026>>>        Procedure OnRowClick String sRowId
+39029>>>            tWebNavigateData NavigateData
+39029>>>            tWebNavigateData NavigateData
+39029>>>            Get GetNavigateData to NavigateData
+39030>>>
+39030>>>            Case Begin
+39030>>>                Case (NavigateData.eNavigateType = nfFromParent)
 39032>>>// ToDo: Fill in the from-parent child Select view object name for navigate forward
-39032>>>//        WebRegisterPath ntNavigateForward oSelectView
-39032>>>
-39032>>>        Procedure OnRowClick String sRowId
-39035>>>            tWebNavigateData NavigateData
-39035>>>            tWebNavigateData NavigateData
-39035>>>            Get GetNavigateData to NavigateData
-39036>>>
-39036>>>            Case Begin
-39036>>>                Case (NavigateData.eNavigateType = nfFromParent)
-39038>>>// ToDo: Fill in the from-parent child Select view object name for navigate forward
-39038>>>Error DFERR_PROGRAM "NavigateForward to this from-parent child Select view not yet defined"
-39039>>>>
-39039>>>//                    Send NavigateForward of oSelectView Self
-39039>>>                    Case Break
-39040>>>
-39040>>>                Case (NavigateData.eNavigateType = nfFromChild)
-39043>>>                    Send NavigateClose Self
-39044>>>                    Case Break
+39032>>>Error DFERR_PROGRAM "NavigateForward to this from-parent child Select view not yet defined"
+39033>>>>
+39033>>>//                    Send NavigateForward of oSelectView Self
+39033>>>                    Case Break
+39034>>>
+39034>>>                Case (NavigateData.eNavigateType = nfFromChild)
+39037>>>                    Send NavigateClose Self
+39038>>>                    Case Break
+39039>>>
+39039>>>                Case (NavigateData.eNavigateType = nfFromMain)
+39042>>>                    Send NavigateClose Self
+39043>>>                    Case Break
+39044>>>
+39044>>>                Case Else // must be nfUndefined
+39044>>>// ToDo: Fill in the from-parent child Select view object name for navigate forward
+39044>>>Error DFERR_PROGRAM "NavigateForward to this from-parent child Select view not yet defined"
+39045>>>>
+39045>>>//                    Send NavigateForward of oSelectView Self
 39045>>>
-39045>>>                Case (NavigateData.eNavigateType = nfFromMain)
-39048>>>                    Send NavigateClose Self
-39049>>>                    Case Break
-39050>>>
-39050>>>                Case Else // must be nfUndefined
-39050>>>// ToDo: Fill in the from-parent child Select view object name for navigate forward
-39050>>>Error DFERR_PROGRAM "NavigateForward to this from-parent child Select view not yet defined"
-39051>>>>
-39051>>>//                    Send NavigateForward of oSelectView Self
+39045>>>            Case End
+39045>>>        End_Procedure
+39046>>>
+39046>>>        Procedure OnGetNavigateForwardData tWebNavigateData ByRef NavigateData Handle hoToView
+39049>>>            Move True to NavigateData.bReadOnly
+39050>>>        End_Procedure
 39051>>>
-39051>>>            Case End
-39051>>>        End_Procedure
+39051>>>    End_Object 
 39052>>>
-39052>>>        Procedure OnGetNavigateForwardData tWebNavigateData ByRef NavigateData Handle hoToView
-39055>>>            Move True to NavigateData.bReadOnly
-39056>>>        End_Procedure
-39057>>>
-39057>>>    End_Object 
+39052>>>    Object oActionGroup is a cWebMenuGroup
+39054>>>
+39054>>>        Object oSearch is a cWebMenuItem
+39056>>>            Set psCSSClass to "WebPromptMenuItem"
+39057>>>            Set psCaption to "Search"
 39058>>>
-39058>>>    Object oActionGroup is a cWebMenuGroup
-39060>>>
-39060>>>        Object oSearch is a cWebMenuItem
-39062>>>            Set psCSSClass to "WebPromptMenuItem"
-39063>>>            Set psCaption to "Search"
+39058>>>            Procedure OnClick
+39061>>>                Send Search of oList
+39062>>>            End_Procedure
+39063>>>
+39063>>>        End_Object 
 39064>>>
-39064>>>            Procedure OnClick
-39067>>>                Send Search of oList
-39068>>>            End_Procedure
-39069>>>
-39069>>>        End_Object 
-39070>>>
-39070>>>        Object oNewButton is a cWebMenuItem
-39072>>>            Set psCSSClass to "WebClearMenuItem"
-39073>>>            Set psCaption to "New"
+39064>>>        Object oNewButton is a cWebMenuItem
+39066>>>            Set psCSSClass to "WebClearMenuItem"
+39067>>>            Set psCaption to "New"
+39068>>>
+39068>>>WebRegisterPath ntNavigateForward oZoomJugador
 39074>>>
-39074>>>WebRegisterPath ntNavigateForward oZoomJugador
-39080>>>
-39080>>>            Procedure OnClick
-39083>>>                Send NavigatePath
-39084>>>            End_Procedure
-39085>>>
-39085>>>            Procedure OnGetNavigateForwardData tWebNavigateData ByRef NavigateData Handle hoToView
-39088>>>                Move True to NavigateData.bNewRecord
-39089>>>            End_Procedure
-39090>>>
-39090>>>        End_Object 
-39091>>>    End_Object 
-39092>>>
-39092>>>    Procedure OnNavigateForward tWebNavigateData NavigateData Integer hoInvokingView Integer hoInvokingObject
-39095>>>        WebSet pbRender of oNewButton to True
-39096>>>        WebSet pbRender of oDetailButton to True
-39097>>>
-39097>>>        Case Begin
-39097>>>            Case (NavigateData.eNavigateType = nfFromParent)
-39099>>>                // If from parent, this is a constrained drill down
-39099>>>                Case Break
-39100>>>
-39100>>>            Case (NavigateData.eNavigateType = nfFromChild)
-39103>>>                // If from child, this is a probably a parent lookup from a Zoom
-39103>>>                Case Break
+39074>>>            Procedure OnClick
+39077>>>                Send NavigatePath
+39078>>>            End_Procedure
+39079>>>
+39079>>>            Procedure OnGetNavigateForwardData tWebNavigateData ByRef NavigateData Handle hoToView
+39082>>>                Move True to NavigateData.bNewRecord
+39083>>>            End_Procedure
+39084>>>
+39084>>>        End_Object 
+39085>>>    End_Object 
+39086>>>
+39086>>>    Procedure OnNavigateForward tWebNavigateData NavigateData Integer hoInvokingView Integer hoInvokingObject
+39089>>>        WebSet pbRender of oNewButton to True
+39090>>>        WebSet pbRender of oDetailButton to True
+39091>>>
+39091>>>        Case Begin
+39091>>>            Case (NavigateData.eNavigateType = nfFromParent)
+39093>>>                // If from parent, this is a constrained drill down
+39093>>>                Case Break
+39094>>>
+39094>>>            Case (NavigateData.eNavigateType = nfFromChild)
+39097>>>                // If from child, this is a probably a parent lookup from a Zoom
+39097>>>                Case Break
+39098>>>
+39098>>>            Case (NavigateData.eNavigateType = nfFromMain)
+39101>>>                // If from main, this is a probably a main-file lookup from a Zoom
+39101>>>                WebSet pbRender of oDetailButton to False
+39102>>>                Case Break
+39103>>>
+39103>>>            Case Else // must be nfUndefined
+39103>>>                // This may be the start of a drilldown query or this may be used for some kind of custom query.
+39103>>>
+39103>>>        Case End
+39103>>>
+39103>>>    End_Procedure
 39104>>>
-39104>>>            Case (NavigateData.eNavigateType = nfFromMain)
-39107>>>                // If from main, this is a probably a main-file lookup from a Zoom
-39107>>>                WebSet pbRender of oDetailButton to False
-39108>>>                Case Break
-39109>>>
-39109>>>            Case Else // must be nfUndefined
-39109>>>                // This may be the start of a drilldown query or this may be used for some kind of custom query.
-39109>>>
-39109>>>        Case End
-39109>>>
-39109>>>    End_Procedure
-39110>>>
-39110>>>
-39110>>>End_Object 
-39111>    Set phoDefaultView to oDashboard
-39112>
-39112>End_Object
-39113>
-39113>Send StartWebApp of oWebApp
-39114>
+39104>>>
+39104>>>End_Object 
+39105>    Set phoDefaultView to oDashboard
+39106>
+39106>End_Object
+39107>
+39107>Send StartWebApp of oWebApp
+39108>
 Summary
-Memory Available: 5982199808
+Memory Available: 4774420480
 Total Warnings : 0
 Total Errors   : 0
-Total Symbols  : 25622
+Total Symbols  : 25625
 Total Resources: 0
-Total Commands : 39113
+Total Commands : 39107
 Total Windows  : 0
 Total Pages    : 0
-Static Data    : 483913
-Message area   : 262533
-Total Blocks   : 17327
+Static Data    : 483873
+Message area   : 262444
+Total Blocks   : 17325
