@@ -127,8 +127,19 @@ Object oZoomJugador is a cWebView
             Procedure OnClick
                 Send RefreshRecord
             End_Procedure
+        Object oPosicionesBtn is a cWebMenuItem
+            Set psCaption to "Posiciones"
+            Set peActionDisplay to adMenu
 
+            WebRegisterPath ntNavigateForwardCustom oSelectPosicion
+
+            Procedure OnClick
+                Send NavigatePath
+            End_Procedure
+
+        End_Object
         End_Object 
+        
     End_Object 
 
     Procedure SetActionButtons
