@@ -14,7 +14,7 @@ Use cequipoDataDictionary.dd
 Use centrenadorDataDictionary.dd
 
 Object oSelectEntrenador is a cWebView
-    Set psCaption to "Vista Select de Entrenador"
+    Set psCaption to "Entrenadores"
     Set peWebViewStyle to wvsDrilldown
     Set peViewType to vtSelect
     Set piColumnCount to 12

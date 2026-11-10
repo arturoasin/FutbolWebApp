@@ -1,5 +1,5 @@
 Compiling Program: C:\DataFlex Projects\FutbolWebApp\AppSrc\WebApp.src
-Memory Available: 4728274944
+Memory Available: 4720664576
 1>Use AllWebAppClasses.pkg
 Using pre-compiled package ALLWEBAPPCLASSES.PKG
 Including file: AllWebAppClasses.x64.pkd    (C:\Program Files\DataFlex 25.0\Pkg\AllWebAppClasses.x64.pkd)
@@ -1619,7 +1619,7 @@ Including file: equipo.fd    (C:\DataFlex Projects\FutbolWebApp\DDSrc\equipo.fd)
 37497>>>>>End_Class
 37498>>>
 37498>>>Object oSelectLiga is a cWebView
-37500>>>    Set psCaption to "Vista Select de Liga"
+37500>>>    Set psCaption to "Ligas"
 37501>>>    Set peWebViewStyle to wvsDrilldown
 37502>>>    Set peViewType to vtSelect
 37503>>>    Set piColumnCount to 12
@@ -1778,7 +1778,7 @@ Including file: ZoomLiga.wo    (C:\DataFlex Projects\FutbolWebApp\AppSrc\ZoomLig
 37642>>>
 37642>>>Object oZoomLiga is a cWebView
 37644>>>    Set piColumnCount to 12
-37645>>>    Set psCaption to "Vista Zoom de Liga"
+37645>>>    Set psCaption to "Liga"
 37646>>>    Set peWebViewStyle to wvsDrilldown
 37647>>>    Set peViewType to vtZoom
 37648>>>    Set pbShowCaption to False
@@ -1982,7 +1982,7 @@ Including file: jugadorposicion.fd    (C:\DataFlex Projects\FutbolWebApp\DDSrc\j
 37808>>>>>End_Class
 37809>>>
 37809>>>Object oSelectPosicion is a cWebView
-37811>>>    Set psCaption to "Vista Select de Posicion"
+37811>>>    Set psCaption to "Posiciones"
 37812>>>    Set peWebViewStyle to wvsDrilldown
 37813>>>    Set peViewType to vtSelect
 37814>>>    Set piColumnCount to 12
@@ -2133,7 +2133,7 @@ Including file: ZoomPosicion.wo    (C:\DataFlex Projects\FutbolWebApp\AppSrc\Zoo
 37939>>>
 37939>>>Object oZoomPosicion is a cWebView
 37941>>>    Set piColumnCount to 12
-37942>>>    Set psCaption to "Vista Zoom de Posicion"
+37942>>>    Set psCaption to "Posicion"
 37943>>>    Set peWebViewStyle to wvsDrilldown
 37944>>>    Set peViewType to vtZoom
 37945>>>    Set pbShowCaption to False
@@ -2319,7 +2319,7 @@ Including file: jugador.fd    (C:\DataFlex Projects\FutbolWebApp\DDSrc\jugador.f
 38088>>>
 38088>>>Object oZoomEquipo is a cWebView
 38090>>>    Set piColumnCount to 12
-38091>>>    Set psCaption to "Vista Zoom de Equipo"
+38091>>>    Set psCaption to "Equipo"
 38092>>>    Set peWebViewStyle to wvsDrilldown
 38093>>>    Set peViewType to vtZoom
 38094>>>    Set pbShowCaption to False
@@ -2487,7 +2487,7 @@ Including file: SelectEquipo.wo    (C:\DataFlex Projects\FutbolWebApp\AppSrc\Sel
 38230>>>Use cequipoDataDictionary.dd
 38230>>>
 38230>>>Object oSelectEquipo is a cWebView
-38232>>>    Set psCaption to "Vista Select de Equipo"
+38232>>>    Set psCaption to "Equipos"
 38233>>>    Set peWebViewStyle to wvsDrilldown
 38234>>>    Set peViewType to vtSelect
 38235>>>    Set piColumnCount to 12
@@ -2664,7 +2664,7 @@ Including file: centrenadorDataDictionary.dd    (C:\DataFlex Projects\FutbolWebA
 38381>>>
 38381>>>Object oZoomEntrenador is a cWebView
 38383>>>    Set piColumnCount to 12
-38384>>>    Set psCaption to "Vista Zoom de Entrenador"
+38384>>>    Set psCaption to "Entrenador"
 38385>>>    Set peWebViewStyle to wvsDrilldown
 38386>>>    Set peViewType to vtZoom
 38387>>>    Set pbShowCaption to False
@@ -2853,7 +2853,7 @@ Including file: SelectEntrenador.wo    (C:\DataFlex Projects\FutbolWebApp\AppSrc
 38543>>>Use centrenadorDataDictionary.dd
 38543>>>
 38543>>>Object oSelectEntrenador is a cWebView
-38545>>>    Set psCaption to "Vista Select de Entrenador"
+38545>>>    Set psCaption to "Entrenadores"
 38546>>>    Set peWebViewStyle to wvsDrilldown
 38547>>>    Set peViewType to vtSelect
 38548>>>    Set piColumnCount to 12
@@ -3048,7 +3048,7 @@ Including file: cjugadorDataDictionary.dd    (C:\DataFlex Projects\FutbolWebApp\
 38713>>>
 38713>>>Object oZoomJugador is a cWebView
 38715>>>    Set piColumnCount to 12
-38716>>>    Set psCaption to "Vista Zoom de Jugador"
+38716>>>    Set psCaption to "Jugador"
 38717>>>    Set peWebViewStyle to wvsDrilldown
 38718>>>    Set peViewType to vtZoom
 38719>>>    Set pbShowCaption to False
@@ -3250,7 +3250,7 @@ Including file: SelectJugador.wo    (C:\DataFlex Projects\FutbolWebApp\AppSrc\Se
 38891>>>Use cjugadorDataDictionary.dd
 38891>>>
 38891>>>Object oSelectJugador is a cWebView
-38893>>>    Set psCaption to "Vista Select de Jugador"
+38893>>>    Set psCaption to "Jugadores"
 38894>>>    Set peWebViewStyle to wvsDrilldown
 38895>>>    Set peViewType to vtSelect
 38896>>>    Set piColumnCount to 12
@@ -3421,7 +3421,7 @@ Including file: SelectJugador.wo    (C:\DataFlex Projects\FutbolWebApp\AppSrc\Se
 39045>Send StartWebApp of oWebApp
 39046>
 Summary
-Memory Available: 4705726464
+Memory Available: 4708573184
 Total Warnings : 0
 Total Errors   : 0
 Total Symbols  : 25613
@@ -3429,6 +3429,6 @@ Total Resources: 0
 Total Commands : 39045
 Total Windows  : 0
 Total Pages    : 0
-Static Data    : 483337
+Static Data    : 483193
 Message area   : 261837
-Total Blocks   : 17306
+Total Blocks   : 17304

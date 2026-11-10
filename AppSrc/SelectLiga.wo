@@ -12,7 +12,7 @@ Use cWebColumn.pkg
 Use cligaDataDictionary.dd
 
 Object oSelectLiga is a cWebView
-    Set psCaption to "Vista Select de Liga"
+    Set psCaption to "Ligas"
     Set peWebViewStyle to wvsDrilldown
     Set peViewType to vtSelect
     Set piColumnCount to 12

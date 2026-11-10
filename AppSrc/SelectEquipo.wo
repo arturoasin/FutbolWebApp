@@ -13,7 +13,7 @@ Use cligaDataDictionary.dd
 Use cequipoDataDictionary.dd
 
 Object oSelectEquipo is a cWebView
-    Set psCaption to "Vista Select de Equipo"
+    Set psCaption to "Equipos"
     Set peWebViewStyle to wvsDrilldown
     Set peViewType to vtSelect
     Set piColumnCount to 12

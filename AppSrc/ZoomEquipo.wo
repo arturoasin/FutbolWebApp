@@ -13,7 +13,7 @@ Use cequipoDataDictionary.dd
 
 Object oZoomEquipo is a cWebView
     Set piColumnCount to 12
-    Set psCaption to "Vista Zoom de Equipo"
+    Set psCaption to "Equipo"
     Set peWebViewStyle to wvsDrilldown
     Set peViewType to vtZoom
     Set pbShowCaption to False

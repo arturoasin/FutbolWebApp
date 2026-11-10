@@ -12,7 +12,7 @@ Use cWebColumn.pkg
 Use cposicionDataDictionary.dd
 
 Object oSelectPosicion is a cWebView
-    Set psCaption to "Vista Select de Posicion"
+    Set psCaption to "Posiciones"
     Set peWebViewStyle to wvsDrilldown
     Set peViewType to vtSelect
     Set piColumnCount to 12
