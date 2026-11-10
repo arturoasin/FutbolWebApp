@@ -120,13 +120,16 @@ Object oZoomJugador is a cWebView
 
         End_Object 
 
-        Object oCancelChangesBtn is a cWebMenuItem
+             Object oCancelChangesBtn is a cWebMenuItem
             Set psCSSClass to "WebIcon_Refresh"
             Set psCaption to "Clear Changes"
             Set peActionDisplay to adMenu
             Procedure OnClick
                 Send RefreshRecord
             End_Procedure
+        
+        End_Object
+
         Object oPosicionesBtn is a cWebMenuItem
             Set psCaption to "Posiciones"
             Set peActionDisplay to adMenu
@@ -136,10 +139,9 @@ Object oZoomJugador is a cWebView
             Procedure OnClick
                 Send NavigatePath
             End_Procedure
-
+       
         End_Object
-        End_Object 
-        
+    
     End_Object 
 
     Procedure SetActionButtons

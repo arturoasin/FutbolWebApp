@@ -1,5 +1,5 @@
 Compiling Program: C:\DataFlex Projects\FutbolWebApp\AppSrc\WebApp.src
-Memory Available: 4663795712
+Memory Available: 4481056768
 1>Use AllWebAppClasses.pkg
 Using pre-compiled package ALLWEBAPPCLASSES.PKG
 Including file: AllWebAppClasses.x64.pkd    (C:\Program Files\DataFlex 25.0\Pkg\AllWebAppClasses.x64.pkd)
@@ -3034,7 +3034,6 @@ Including file: SelectEntrenador.wo    (C:\DataFlex Projects\FutbolWebApp\AppSrc
 38731>>>
 38731>>>    End_Procedure
 38732>>>
-38732>>>
 38732>>>End_Object 
 38733>    Use ZoomJugador.wo
 Including file: ZoomJugador.wo    (C:\DataFlex Projects\FutbolWebApp\AppSrc\ZoomJugador.wo)
@@ -3185,26 +3184,28 @@ Including file: cjugadorDataDictionary.dd    (C:\DataFlex Projects\FutbolWebApp\
 38869>>>
 38869>>>        End_Object 
 38870>>>
-38870>>>        Object oCancelChangesBtn is a cWebMenuItem
+38870>>>             Object oCancelChangesBtn is a cWebMenuItem
 38872>>>            Set psCSSClass to "WebIcon_Refresh"
 38873>>>            Set psCaption to "Clear Changes"
 38874>>>            Set peActionDisplay to adMenu
 38875>>>            Procedure OnClick
 38878>>>                Send RefreshRecord
 38879>>>            End_Procedure
-38880>>>        Object oPosicionesBtn is a cWebMenuItem
-38882>>>            Set psCaption to "Posiciones"
-38883>>>            Set peActionDisplay to adMenu
-38884>>>
-38884>>>            WebRegisterPath ntNavigateForwardCustom oSelectPosicion
-38890>>>
-38890>>>            Procedure OnClick
-38893>>>                Send NavigatePath
-38894>>>            End_Procedure
-38895>>>
-38895>>>        End_Object
-38896>>>        End_Object 
-38897>>>        
+38880>>>        
+38880>>>        End_Object
+38881>>>
+38881>>>        Object oPosicionesBtn is a cWebMenuItem
+38883>>>            Set psCaption to "Posiciones"
+38884>>>            Set peActionDisplay to adMenu
+38885>>>
+38885>>>            WebRegisterPath ntNavigateForwardCustom oSelectPosicion
+38891>>>
+38891>>>            Procedure OnClick
+38894>>>                Send NavigatePath
+38895>>>            End_Procedure
+38896>>>       
+38896>>>        End_Object
+38897>>>    
 38897>>>    End_Object 
 38898>>>
 38898>>>    Procedure SetActionButtons
@@ -3457,7 +3458,7 @@ Including file: SelectJugador.wo    (C:\DataFlex Projects\FutbolWebApp\AppSrc\Se
 39097>Send StartWebApp of oWebApp
 39098>
 Summary
-Memory Available: 4685500416
+Memory Available: 4469166080
 Total Warnings : 0
 Total Errors   : 0
 Total Symbols  : 25628
