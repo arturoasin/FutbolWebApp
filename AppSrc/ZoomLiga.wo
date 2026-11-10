@@ -12,7 +12,7 @@ Use cligaDataDictionary.dd
 
 Object oZoomLiga is a cWebView
     Set piColumnCount to 12
-    Set psCaption to "Vista Zoom de Liga"
+    Set psCaption to "Liga"
     Set peWebViewStyle to wvsDrilldown
     Set peViewType to vtZoom
     Set pbShowCaption to False

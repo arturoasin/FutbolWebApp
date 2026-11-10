@@ -12,7 +12,7 @@ Use cWebColumn.pkg
 Use cposicionDataDictionary.dd
 
 Object oSelectPosicion is a cWebView
-    Set psCaption to "Vista Select de Posicion"
+    Set psCaption to "Posiciones"
     Set peWebViewStyle to wvsDrilldown
     Set peViewType to vtSelect
     Set piColumnCount to 12
@@ -61,18 +61,13 @@ Object oSelectPosicion is a cWebView
 
         End_Object 
 
-// ToDo: Fill in the from-parent child Select view object name for navigate forward
-//        WebRegisterPath ntNavigateForward oSelectView
-
         Procedure OnRowClick String sRowId
             tWebNavigateData NavigateData
             Get GetNavigateData to NavigateData
 
             Case Begin
                 Case (NavigateData.eNavigateType = nfFromParent)
-// ToDo: Fill in the from-parent child Select view object name for navigate forward
-Error DFERR_PROGRAM "NavigateForward to this from-parent child Select view not yet defined"
-//                    Send NavigateForward of oSelectView Self
+                    // Sin vista hija definida
                     Case Break
 
                 Case (NavigateData.eNavigateType = nfFromChild)
@@ -84,13 +79,11 @@ Error DFERR_PROGRAM "NavigateForward to this from-parent child Select view not y
                     Case Break
 
                 Case Else // must be nfUndefined
-// ToDo: Fill in the from-parent child Select view object name for navigate forward
-Error DFERR_PROGRAM "NavigateForward to this from-parent child Select view not yet defined"
-//                    Send NavigateForward of oSelectView Self
+                    // Sin vista hija definida
 
             Case End
         End_Procedure
-
+        
         Procedure OnGetNavigateForwardData tWebNavigateData ByRef NavigateData Handle hoToView
             Move True to NavigateData.bReadOnly
         End_Procedure
