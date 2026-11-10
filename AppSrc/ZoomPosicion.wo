@@ -12,7 +12,7 @@ Use cposicionDataDictionary.dd
 
 Object oZoomPosicion is a cWebView
     Set piColumnCount to 12
-    Set psCaption to "Vista Zoom de Posicion"
+    Set psCaption to "Posicion"
     Set peWebViewStyle to wvsDrilldown
     Set peViewType to vtZoom
     Set pbShowCaption to False
