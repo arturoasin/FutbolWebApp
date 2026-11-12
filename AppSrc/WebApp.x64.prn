@@ -1,5 +1,5 @@
 Compiling Program: C:\DataFlex Projects\FutbolWebApp\AppSrc\WebApp.src
-Memory Available: 7165390848
+Memory Available: 6750937088
 1>Use AllWebAppClasses.pkg
 Using pre-compiled package ALLWEBAPPCLASSES.PKG
 Including file: AllWebAppClasses.x64.pkd    (C:\Program Files\DataFlex 25.0\Pkg\AllWebAppClasses.x64.pkd)
@@ -172,7 +172,7 @@ Including file: LoginEncryptionKey.inc    (C:\DataFlex Projects\FutbolWebApp\App
 36416>                    Set psCaption to C_$View
 36417>
 36417>                    Object oVistaSelectdeLigaItem1 is a cWebMenuItem
-36419>                        Set psCaption to "Vista Select de Liga"
+36419>                        Set psCaption to "Ligas"
 36420>
 36420>                        WebRegisterPath ntNavigateBegin oSelectLiga
 36426>
@@ -183,7 +183,7 @@ Including file: LoginEncryptionKey.inc    (C:\DataFlex Projects\FutbolWebApp\App
 36433>                    End_Object
 36434>
 36434>                    Object oVistaSelectdePosicionItem1 is a cWebMenuItem
-36436>                        Set psCaption to "Vista Select de Posicion"
+36436>                        Set psCaption to "Posiciones"
 36437>
 36437>                        WebRegisterPath ntNavigateBegin oSelectPosicion
 36443>
@@ -194,7 +194,7 @@ Including file: LoginEncryptionKey.inc    (C:\DataFlex Projects\FutbolWebApp\App
 36450>                    End_Object
 36451>
 36451>                    Object oVistaSelectdeEquipoItem1 is a cWebMenuItem
-36453>                        Set psCaption to "Vista Select de Equipo"
+36453>                        Set psCaption to "Equipos"
 36454>
 36454>                        WebRegisterPath ntNavigateBegin oSelectEquipo
 36460>
@@ -205,7 +205,7 @@ Including file: LoginEncryptionKey.inc    (C:\DataFlex Projects\FutbolWebApp\App
 36467>                    End_Object
 36468>
 36468>                    Object oVistaSelectdeEntrenadorItem1 is a cWebMenuItem
-36470>                        Set psCaption to "Vista Select de Entrenador"
+36470>                        Set psCaption to "Entrenadores"
 36471>
 36471>                        WebRegisterPath ntNavigateBegin oSelectEntrenador
 36477>
@@ -216,7 +216,7 @@ Including file: LoginEncryptionKey.inc    (C:\DataFlex Projects\FutbolWebApp\App
 36484>                    End_Object
 36485>
 36485>                    Object oVistaSelectdeJugadorItem1 is a cWebMenuItem
-36487>                        Set psCaption to "Vista Select de Jugador"
+36487>                        Set psCaption to "Jugadores"
 36488>
 36488>                        WebRegisterPath ntNavigateBegin oSelectJugador
 36494>
@@ -3421,7 +3421,7 @@ Including file: SelectJugador.wo    (C:\DataFlex Projects\FutbolWebApp\AppSrc\Se
 39045>Send StartWebApp of oWebApp
 39046>
 Summary
-Memory Available: 7159779328
+Memory Available: 6735056896
 Total Warnings : 0
 Total Errors   : 0
 Total Symbols  : 25613
@@ -3429,6 +3429,6 @@ Total Resources: 0
 Total Commands : 39045
 Total Windows  : 0
 Total Pages    : 0
-Static Data    : 483305
+Static Data    : 483233
 Message area   : 261837
 Total Blocks   : 17305
