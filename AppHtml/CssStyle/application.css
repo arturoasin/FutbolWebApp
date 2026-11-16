@@ -1,0 +1,42 @@
+/* ===== FutbolWebApp: colores ===== */
+
+/* Quita el fondo blanco de dentro de las tarjetas */
+.TilesGroup .Tile,
+.TilesGroup .Tile * {
+    background: transparent !important;
+}
+
+/* Tamaño de las tarjetas y separación entre ellas */
+.TilesGroup .Tile {
+    height: 110px !important;
+    border-bottom: 10px solid #efefef !important;
+}
+
+/* Letra del título */
+.TilesGroup .Tile .Tile_Title {
+    font-size: 1.7em !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+}
+
+/* Letra del subtítulo */
+.TilesGroup .Tile .Tile_Subtitle {
+    font-size: 1em !important;
+    color: #ffffff !important;
+}
+
+/* Color de fondo de las tarjetas: verde */
+.TilesGroup .TileBienvenida,
+.TilesGroup .TileLiga,
+.TilesGroup .TilePosicion,
+.TilesGroup .TileEquipo,
+.TilesGroup .TileEntrenador,
+.TilesGroup .TileJugador {
+    background-color: #2e7d32 !important;
+}
+
+/* Cabecera de arriba: el mismo verde, todo el panel */
+.HeaderPanel,
+.HeaderPanel * {
+    background-color: #2e7d32 !important;
+}
