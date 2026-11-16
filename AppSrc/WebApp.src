@@ -54,7 +54,7 @@ Object oWebApp is a cWebApp
                     Set psCaption to C_$View
 
                     Object oVistaSelectdeLigaItem1 is a cWebMenuItem
-                        Set psCaption to "Vista Select de Liga"
+                        Set psCaption to "Ligas"
 
                         WebRegisterPath ntNavigateBegin oSelectLiga
 
@@ -65,7 +65,7 @@ Object oWebApp is a cWebApp
                     End_Object
 
                     Object oVistaSelectdePosicionItem1 is a cWebMenuItem
-                        Set psCaption to "Vista Select de Posicion"
+                        Set psCaption to "Posiciones"
 
                         WebRegisterPath ntNavigateBegin oSelectPosicion
 
@@ -76,7 +76,7 @@ Object oWebApp is a cWebApp
                     End_Object
 
                     Object oVistaSelectdeEquipoItem1 is a cWebMenuItem
-                        Set psCaption to "Vista Select de Equipo"
+                        Set psCaption to "Equipos"
 
                         WebRegisterPath ntNavigateBegin oSelectEquipo
 
@@ -87,7 +87,7 @@ Object oWebApp is a cWebApp
                     End_Object
 
                     Object oVistaSelectdeEntrenadorItem1 is a cWebMenuItem
-                        Set psCaption to "Vista Select de Entrenador"
+                        Set psCaption to "Entrenadores"
 
                         WebRegisterPath ntNavigateBegin oSelectEntrenador
 
@@ -98,7 +98,7 @@ Object oWebApp is a cWebApp
                     End_Object
 
                     Object oVistaSelectdeJugadorItem1 is a cWebMenuItem
-                        Set psCaption to "Vista Select de Jugador"
+                        Set psCaption to "Jugadores"
 
                         WebRegisterPath ntNavigateBegin oSelectJugador
 
