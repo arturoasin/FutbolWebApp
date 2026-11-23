@@ -120,8 +120,18 @@ Object oZoomEntrenador is a cWebView
             Procedure OnClick
                 Send RefreshRecord
             End_Procedure
-
+       
         End_Object 
+        
+        Object oDespedirBtn is a cWebMenuItem
+            Set psCaption to "Despedir"
+            Set peActionDisplay to adMenu
+            Procedure OnClick
+                Send Clear of oequipo_DD
+            End_Procedure
+       
+        End_Object 
+   
     End_Object 
 
     Procedure SetActionButtons
