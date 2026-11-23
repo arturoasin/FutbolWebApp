@@ -128,11 +128,12 @@ Object oZoomEntrenador is a cWebView
         tWebNavigateData NavigateData
         Boolean bHasRecord
         Handle hoDD
+        Boolean bNuevo
 
         Get Server to hoDD
         Get GetNavigateData to NavigateData
         Get HasRecord of hoDD to bHasRecord
-
+       
         // let's hide all buttons and then Show the ones we want
         WebSet pbRender of oEditBtn to False
         WebSet pbRender of oSaveBtn to False
