@@ -7,6 +7,7 @@ Use cWebPanel.pkg
 Use cWebMenuGroup.pkg
 Use cWebMenuItem.pkg
 Use cWebForm.pkg
+Use cWebCombo.pkg
 
 Use cligaDataDictionary.dd
 Use cequipoDataDictionary.dd
@@ -56,7 +57,7 @@ Object oZoomJugador is a cWebView
             Set psLabel to "Apellido"
         End_Object 
 
-        Object ojugadorNacionalidad is a cWebForm
+        Object oNacionalidad is a cWebCombo
             Entry_Item jugador.Nacionalidad
             Set piColumnSpan to 12
             Set piColumnIndex to 0
@@ -141,11 +142,15 @@ Object oZoomJugador is a cWebView
         tWebNavigateData NavigateData
         Boolean bHasRecord
         Handle hoDD
-
+        Boolean bNuevo
+        
         Get Server to hoDD
         Get GetNavigateData to NavigateData
         Get HasRecord of hoDD to bHasRecord
-
+        Move (bHasRecord = False) to bNuevo
+        WebSet pbEnabled of ojugadorNombre to bNuevo
+        WebSet pbEnabled of ojugadorApellido to bNuevo  
+        
         // let's hide all buttons and then Show the ones we want
         WebSet pbRender of oEditBtn to False
         WebSet pbRender of oSaveBtn to False
